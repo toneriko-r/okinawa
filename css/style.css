@@ -21,21 +21,25 @@ p {
 
 header {
   background: rgb(241, 241, 235);
+  
 }
 
 header h1 {
   font-size: 24px;
+
 }
 header .container {
   display: flex;
   align-items: center;
   padding: 32px 0;
+
 }
 
 header .container div + div {
   margin-left: 28px;
 
 }
+
 
 header .icon img {
   border-radius: 50%;
@@ -63,15 +67,18 @@ main {
 main h1 {
   margin: 0;
   padding: 64px;
+  text-align: center;
 }
 
 main h2 {
   margin-top: 16px;
+  padding: 0 16px;
 }
 
 main p {
   margin: 0;
   padding-bottom: 80px;
+  padding: 0 16px;
 }
 
 
@@ -82,5 +89,32 @@ footer {
   text-align: center;
   padding: 64px 0;
   background: rgb(056, 145, 186);
+}
+
+/* モバイル版 */
+
+@media (max-width: 600px) {
+
+  header {
+    padding: 0 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .container div + div {
+    margin-left: 8px;
+  
+  }
+
+ 
+  h1,h2 {
+    font-size: 1rem;
+    
+  }
+  .container p {
+    font-size: 0.5rem;
+
+  }
 }
 
